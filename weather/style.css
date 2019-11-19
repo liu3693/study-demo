@@ -1,0 +1,195 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.body{
+    height: 100%;
+    background-color: darkgrey;
+    color: white;
+    font-family: Arial,sans-serif;
+}
+.main-wrapper{
+    height: 98%;
+    width: 98%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-image: linear-gradient(45deg,#6DA75A,#109FA3);
+}
+.today-wrapper{
+    height: 67%;
+    width: 90%;
+    margin: 0 auto;
+}
+.future-wrapper{
+    height: 33%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 0 0 12px 12px;
+}
+.today-top{
+    width: 100%;
+    height: 70%;
+}
+.today-bottom{
+    width: 100%;
+    height: 30%;
+}
+.today-date{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.today-weather{
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.today-location{
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+.today-temperature{
+    width: 65%;
+    height: 100%;
+    float: right;
+}
+.time{
+    height: 70%;
+}
+.time p{
+    font-size: 14vw;
+    line-height: 1.5em;
+    margin: 0;
+}
+.date{
+    height: 30%;
+    margin-top: 20px;
+}
+.date p{
+    font-size: 3vw;
+    margin:0;
+    padding-left: 8px;
+    line-height: 1em;
+}
+.today-location div{
+    display: inline-block;
+}
+.today-location>div>img{
+    width: 50px;
+    height: 50px;
+}
+.today-location div:nth-child(2){
+    font-size: 3vw;
+    margin-left: 10px;
+}
+.today-temperature{
+    position: relative;
+    font-size: 3vw;
+}
+.min{
+    position: absolute;
+    left: 0;
+    top: -12px;
+}
+.max{
+    position: absolute;
+    right: 0;
+    top: -12px;
+}
+.progress{
+    width: 100%;
+    text-align: center;
+}
+progress{
+    margin-top: 2px;
+    height: 10px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.28);
+    border-radius: 10px;
+    border: 0;
+    -webkit-appearance: none;
+}
+progress::-webkit-progress-bar{
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+progress::-webkit-progress-value{
+    border-radius: 10px;
+    background-color: #fff674;
+}
+progress::-moz-progress-bar{
+    border-radius: 10px;
+    background-color: #fff674;
+}
+.status{
+    width: 30%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 4vw;
+}
+.temperature{
+    width: 30%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 4vw;
+}
+.temperature p{
+
+}
+.today-weather .img{
+    display: inline-block;
+    height: 100%;
+    width: 69%;
+    position: absolute;
+    right: 0;
+}
+.today-weather .img img{
+    width: 50%;
+    position: relative;
+    bottom: -20%;
+}
+.future-wrapper{
+    display: flex;
+    align-content: space-around;
+}
+.future-weather{
+    flex: 1 1 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.future-weather .img{
+    flex: 0 0 45%;
+    text-align: center;
+}
+.future-weather .img img{
+    width: 30%;
+}
+.future-date{
+    flex: 0 0;
+    font-size: 2vw;
+}
+.future-temperature{
+    flex: 0 0;
+    font-size: 2vw;
+}
+
