@@ -1,0 +1,23 @@
+.wrapper{
+    width: 200px;
+}
+input{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 12px;
+}
+.email-sug{
+    margin: 0;
+    list-style: none;
+    border: 1px solid #bbbbbb;
+    padding: 0;
+    display: none;
+    overflow: hidden;
+    text-indent: 12px;
+}
+.email-sug>li:hover{
+    background-color: #bba2b9;
+}
+.select{
+    background-color: cornflowerblue;
+}
