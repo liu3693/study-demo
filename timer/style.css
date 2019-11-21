@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    background-color: #3c4245;
+}
+.wrapper{
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -180px 0 0 -300px;
+}
+.time-wrapper{
+    flex: 70 0;
+    background-color: #5f6769;
+}
+.control-wrapper{
+    flex: 30 0;
+    display: flex;
+    justify-content: center;
+    background-color: #dfcdc3;
+}
+.button-wrapper{
+    margin: 0 30px;
+    width: 120px;
+    text-align: center;
+}
+
+.time-background{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 25px auto;
+    background-color: #5f6769;
+
+}
+
+#minutes,#seconds{
+    background-color: #719192;
+    border-radius: 23px;
+    flex: 1;
+
+}
+#span{
+    flex: 0 0 40px;
+}
+
+.button{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px auto;
+}
+
+
+.start{
+    background-image: url("./img/video.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: top 12px left 15px;
+}
+.stop{
+    background-image: url("./img/stop.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: top 12px left 15px;
+}
+.reset{
+    background-image: url("./img/reset.png");
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+    background-position: top 7px left 7px;
+}
+
+#minutes>p, #seconds>p{
+    text-align: center;
+    /*height: 80%;*/
+    font-size: 150px;
+    margin: 0;
+}
+
+#canvas{
+    width: 100%;
+    height: 100%;
+}

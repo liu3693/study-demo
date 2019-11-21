@@ -1,0 +1,58 @@
+td,th{
+    border: 1px solid black;
+    padding: 15px;
+}
+table,tr{
+    border-collapse: collapse;
+}
+select{
+    overflow: hidden;
+}
+
+label{
+    display: block;
+}
+#product-wrapper,#region-wrapper{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.chart{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.chart #line{
+    flex: 0 1 600px;
+    border: 1px black solid;
+    height: 400px;
+}
+.chart #bar{
+    flex: 0 1 600px;
+    border: 1px black solid;
+    height: 400px;
+}
+.edit{
+    font-size: 1em;
+    background-color: #a3ffb3;
+    opacity: 70;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+td{
+    position: relative;
+}
+.cancel{
+    background-color: rgba(205, 92, 92, 0.56);
+}
+
+.confirm{
+    background-color: #a3ffb3;
+
+}
+.change-wrapper input{
+    width: 35px;
+}

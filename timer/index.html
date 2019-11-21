@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计时器</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.slim.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="time-wrapper">
+        <div class="time-background">
+            <div class="time-area" id="minutes">
+                <p>00</p>
+            </div>
+            <div class="time-area" id="span">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="time-area" id="seconds">
+                <p>00</p>
+            </div>
+        </div>
+    </div>
+    <div class="control-wrapper">
+        <div class="button-wrapper" id="start">
+            <button class="button start" id="start_btn"></button>
+        </div>
+        <div class="button-wrapper" id="reset">
+            <button class="button reset" id="reset_btn"></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
