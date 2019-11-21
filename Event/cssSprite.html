@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精灵图</title>
+</head>
+<style>
+    .gif{
+        background-image: url("erik_ce204002.jpg");
+        background-repeat: no-repeat;
+        width: 480px;
+        height: 480px;
+        background-position: 0px 0px;
+    }
+</style>
+<body>
+<div class="gif"></div>
+<script>
+    let div = document.getElementsByClassName('gif')[0];
+    let value = 0;
+    let id = setInterval(function () {
+        value -= 480;
+        div.style.backgroundPositionY = value+'px';
+        console.log(value);
+        if (value <= -8160){
+            value = 0;
+        }
+    },100);
+</script>
+</div>
+</body>
+</html>

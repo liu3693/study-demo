@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<body>
+<header>
+    <ul>
+        <li><a href="index.html">基础运算</a></li>
+        <li><a href="dec2bin.html">十进制转二进制</a></li>
+        <li><a href="3game.html">3的游戏</a></li>
+        <li><a href="9*9.html">99乘法表</a></li>
+    </ul>
+</header>
+
+<input id="first-number" type="number" value="0" placeholder="第一个数字">
+<input id="second-number" type="number" value="0" placeholder="第二个数字">
+<button id="add-btn">加</button>
+<button id="minus-btn">减</button>
+<button id="times-btn">乘</button>
+<button id="divide-btn">除</button>
+<p id="result">运算结果</p>
+
+<script>
+
+    var btn = document.getElementsByTagName('button');
+    for (var i = 0; i < btn.length; i++) {
+
+        btn[i].onclick = function (ev) {
+
+            var num1 = document.getElementById('first-number').value;
+            var num2 = document.getElementById('second-number').value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+            try {
+                if (!Number.isFinite(num1) || !Number.isFinite(num2)) {
+                    alert('请输入数字');
+                    throw '输入值类型错误';
+                }
+            } catch (e) {
+                console.log('error:'+ e);
+            }
+            var choice = ev.target.innerHTML;
+            console.log(num1);
+            var resulte = '';
+            switch (choice) {
+                case '加':
+                    resulte = num1 + num2;
+                    break;
+                case '减':
+                    resulte = num1 - num2;
+                    break;
+                case '乘':
+                    resulte = num1*num2;
+                    break;
+                case '除':
+                    try{
+                        if (num2 === 0){
+                            alert('除数不能为0');
+                            throw '除数不能为0'
+                        }
+                    } catch (e) {
+                        console.log('error:'+e)
+                    }
+                    resulte = num1/num2;
+                    break;
+            }
+            document.getElementById('result').innerHTML = '运算结果：'+ resulte;
+        }
+    }
+
+
+</script>
+</body>

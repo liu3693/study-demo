@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>你是3吗</title>
+</head>
+<body>
+打开console
+<script>
+    function has3(num) {
+        let str = num.toString();
+        return str.includes('3');
+    }
+    function is3multi(num) {
+        return !(num%3);
+    }
+    for (var i = 1; i < 101; i++){
+        if (has3(i)) {
+            console.log('pa');
+            continue;
+        }else if (is3multi(i)){
+            console.log('pa');
+            continue;
+        }
+        console.log(i);
+    }
+</script>
+</body>
+</html>

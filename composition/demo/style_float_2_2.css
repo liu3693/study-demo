@@ -1,0 +1,18 @@
+.wrap{
+    background-color: #cccccc;
+    width: 80%;
+    margin: 0 auto;
+    /*height: 400px;*/
+}
+
+
+.left{
+    float: left;
+    width: 200px;
+    background-color: aquamarine;
+}
+.right{
+    overflow: auto;
+    background-color: darkorange;
+}
+

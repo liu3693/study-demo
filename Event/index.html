@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="timing.html">定时demo</a>
+<a href="changeCss.html">操作css</a>
+<a href="changeCss1.html">操作css</a>
+<a href=""></a>
+<input id="name" type="text">
+<button id="submit-btn">Submit</button>
+<script>
+    let btn = document.getElementById('submit-btn');
+    // let text = document.querySelector('input#name');
+    let text = document.getElementById('name');
+    btn.addEventListener("click", function () {
+        console.log(text.value);
+    });
+    text.addEventListener("keydown",keydown);
+    function keydown(event) {
+        // console.log(event.key);
+        if (event.key === 'Enter'){
+            console.log(text.value);
+        }
+        if (event.key === 'Escape') {
+            text.value = '';
+        }
+    }
+</script>
+</body>
+</html>

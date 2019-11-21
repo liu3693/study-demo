@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+.wrap{
+    background-color: #cccccc;
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+}
+/*absolute*/
+/*
+.left{
+    width: 30%;
+    background-color: aquamarine;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.right{
+    width: 70%;
+    background-color: darkorange;
+    position: absolute;
+    right: 0;
+    top: 0;
+}*/
+
+/*relative*/
+.left{
+    width: 30%;
+    height: 100px;
+    background-color: aquamarine;
+    position: relative;
+}
+.right{
+    width: 70%;
+    background-color: darkorange;
+    position: relative;
+    left: 30%;
+    top: -100px;
+}

@@ -1,0 +1,24 @@
+body,html{
+    height: 100%;
+    margin: 0;
+}
+
+.list-wrapper{
+    float: right;
+    width: 300px;
+    height: 85%;
+    background-color: #cccccc;
+}
+
+.select-button{
+    height: 50px;
+}
+li:hover{
+    background-color: #6b6b6b;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+li{
+    padding-left: -100px;
+}

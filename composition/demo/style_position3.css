@@ -1,0 +1,28 @@
+.wrap{
+    background-color: #cccccc;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+body{
+    margin: 0;
+}
+.left{
+    width: 200px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 0px;
+}
+.right{
+    width: 200px;
+    background-color: aqua;
+    position: absolute;
+    right: 0px;
+}
+.middle{
+    background-color: darkorange;
+    position: absolute;
+    left: 200px;
+    right: 200px;
+}

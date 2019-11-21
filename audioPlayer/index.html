@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="list-wrapper">
+    <div class="select-button">
+        <input id="input" type="file" accept=".mp3,.ogg,.m4a" multiple>
+        <br>请选择播放的音频文件
+    </div>
+    <div class="list">
+        <ul></ul>
+    </div>
+</div>
+</br>
+<audio id="audio" controls>您的浏览器不支持</audio>
+
+<script>
+    const input = document.getElementById('input');
+    const audio = document.getElementById('audio');
+    const list = document.getElementsByClassName('list')[0];
+    input.addEventListener('change',function (ev) {
+        let files = ev.target.files;// filelist对象
+        let ol = document.createElement('ol');
+        for (let i = 0; i < files.length; i++) {
+            let li = document.createElement('li');
+            let name = files[i].name;
+            li.textContent = name;
+            li.setAttribute('src',URL.createObjectURL(files[i]));
+            ol.appendChild(li);
+        }
+        list.replaceChild(ol,list.children[0]);
+    })
+    let lastSrc = '';
+    list.addEventListener('click',function (ev) {
+        if (ev.target.tagName === 'LI'){
+            if (lastSrc){
+                URL.revokeObjectURL(lastSrc);
+            }
+            let src = ev.target.getAttribute('src');
+            lastSrc = src;
+            audio.setAttribute('src',lastSrc);
+            audio.play();
+        }
+    })
+
+
+
+    //let lastSrc = '';
+    // input.addEventListener('change', function (ev) {
+    //     let file = ev.target.files[0];
+    //     if (file) {
+    //         if (lastSrc) {
+    //             URL.revokeObjectURL(lastSrc);
+    //         }
+    //         let src = URL.createObjectURL(file);
+    //         lastSrc = src;
+    //         audio.setAttribute('src',lastSrc);
+    //         audio.play()
+    //     }
+    // })
+</script>
+</body>
+</html>

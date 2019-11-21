@@ -1,0 +1,61 @@
+body{
+    min-width: 500px;
+}
+/*圣杯三栏*/
+/*
+.wrap{
+    background-color: #cccccc;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 200px;
+
+}
+.left,.right,.middle{
+    float: left;
+    position: relative;
+}
+.left{
+    margin-left: -100%;
+    left: -200px;
+    width: 200px;
+    background: red;
+}
+.right{
+    margin-left: -200px;
+    right: -200px;
+    width: 200px;
+    background: green;
+}
+.middle{
+    width: 100%;
+    background: blue;
+    word-break: break-all;
+
+}*/
+
+/*双飞翼三栏*/
+.wrap{
+    background-color: #cccccc;
+    margin: 0 auto;
+    overflow: auto;
+}
+.left,.right,.middle{
+    float: left;
+}
+.middle{
+    background-color: darkorange;
+    width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0 200px;
+}
+.left{
+    width: 200px;
+    margin-left: -100%;
+    background-color: aquamarine;
+}
+.right{
+    width: 200px;
+    margin-left: -200px;
+    background-color: aqua;
+}

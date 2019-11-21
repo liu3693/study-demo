@@ -1,0 +1,31 @@
+.wrap{
+    background-color: #cccccc;
+    width: 80%;
+    margin: 0 auto;
+}
+/*双float*/
+/*.left{
+    background-color: aquamarine;
+    float: left;
+    width: 30%;
+    height: 100px;
+}
+.right{
+    background-color: darkorange;
+    width: 70%;
+    float: right;
+}*/
+
+/*float+BFC*/
+.left{
+    background-color: aquamarine;
+    float: left;
+    width: 30%;
+    height: 100px;
+    margin-right: 10px;
+}
+.right{
+    background-color: darkorange;
+    overflow: auto;
+    margin-left: 0;
+}

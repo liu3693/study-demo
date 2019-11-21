@@ -1,0 +1,9 @@
+- 外联js文件，需要在文档加载完执行才能dom操作
+window.onload()
+- 使用toPrecision(x) 四舍五入，返回值为string；保留小数点后x-1个位数
+- 判断值是否为NaN，用Number.isNaN(). 不能使用等号
+- sort(comparefn),定义comparefn
+    - 如果 compareFunction(a, b) 小于 0 ，那么 a 会被排列到 b 之前；
+    - 如果 compareFunction(a, b) 等于 0 ， a 和 b 的相对位置不变。备注： ECMAScript 标准并不保证这一行为，而且也不是所有浏览器都会遵守（例如 Mozilla 在 2003 年之前的版本）；
+    - 如果 compareFunction(a, b) 大于 0 ， b 会被排列到 a 之前。
+    - 升序简写形式 arr.sort((a, b) => a - b); 

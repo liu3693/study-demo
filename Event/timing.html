@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时练习</title>
+</head>
+<body>
+<div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+<button id="fade-btn">淡出</button>
+<script>
+    const btn = document.getElementById('fade-btn');
+    const box = document.getElementById('fade-obj');
+    box.style.opacity='1';
+    btn.onclick = function () {
+
+        if (btn.innerHTML === '淡出'){
+            let i = 1;
+            btn.disabled = true;
+            let fadeId = setInterval(fade,100);
+            function fade() {
+                i -= 0.1;
+                box.style.opacity = i.toFixed(1).toString();
+                console.log(box.style.opacity);
+                if (box.style.opacity === '0'){
+                    clearInterval(fadeId);
+                    btn.disabled = false;
+                    btn.innerHTML = '淡入';
+                }
+            }
+        }
+        if (btn.innerHTML === '淡入'){
+            let i = 0;
+            btn.disabled = true;
+            let appearId = setInterval(appear,100);
+            function appear() {
+                i +=0.1;
+                box.style.opacity = i.toFixed(1).toString();
+                if (box.style.opacity === '1'){
+                    clearInterval(appearId);
+                    btn.disabled = false;
+                    btn.innerHTML = '淡出';
+                }
+            }
+        }
+
+    };
+
+
+
+</script>
+</body>
+</html>
